@@ -7,4 +7,3 @@
 // export * from './lib/ngx-liburg-icon.module';
 export * from './lib/icon-core/icon-core.service'
 export * from './lib/icon-core/icon-core.module'
-export * from './lib/icon-core/page-not-found/page-not-found.component'
