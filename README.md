@@ -16,7 +16,13 @@ https://plnkr.co/edit/eWi18QNOrzhrvVUbK1rH?p=preview&preview
 
 1.`npm i ngx-liburg-icon`
 
-2.In `AppModule` you should import `IconCoreModule` 
+2.[Download icon](https://use.fontawesome.com/releases/v6.1.2/fontawesome-free-6.1.2-web.zip)
+   - unzip the file,
+   - open in sprites
+   - copy the 3 files
+   - paste in `assets/icons`
+
+3.In `AppModule` you should import `IconCoreModule` 
 
 
 ## After installed 
