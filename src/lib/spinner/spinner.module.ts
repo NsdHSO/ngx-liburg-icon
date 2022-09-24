@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SpinnerComponent } from './spinner/spinner.component';
+import {MatIconModule} from "@angular/material/icon";
+import { SpinnerComponent } from '.';
 
 
 
@@ -8,8 +9,12 @@ import { SpinnerComponent } from './spinner/spinner.component';
   declarations: [
     SpinnerComponent
   ],
-  imports: [
-    CommonModule
+            imports: [
+              CommonModule,
+              MatIconModule,
+            ],
+  exports: [
+    SpinnerComponent
   ]
 })
 export class SpinnerModule { }
