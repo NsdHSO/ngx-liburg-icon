@@ -5,7 +5,7 @@ import {BehaviorSubject} from "rxjs";
               providedIn: 'root',
             })
 export class SpinnerService {
-  private _isLoading : BehaviorSubject<boolean> = new BehaviorSubject<boolean>(true);
+  private _isLoading : BehaviorSubject<any> = new BehaviorSubject<boolean>(false);
   public get isLoading() : BehaviorSubject<boolean> {
     return this._isLoading;
   }
@@ -14,7 +14,7 @@ export class SpinnerService {
     this._isLoading = value;
   }
 
-  public sendValue(value: boolean){
+  public sendValue(value : boolean) {
     this._isLoading.next(value);
   }
 }
