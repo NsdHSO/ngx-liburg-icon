@@ -1,4 +1,4 @@
-<div class="spinner">
+<div class="spinner" *ngIf="stateSpinner | async">
   <mat-icon
     [svgIcon]="'fa_brands:ion'"
     class="spinner-rotation"
