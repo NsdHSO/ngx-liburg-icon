@@ -1,9 +1,9 @@
-import {ErrorHandler, NgModule} from '@angular/core';
-import {MatIconRegistry} from '@angular/material/icon';
-import {DomSanitizer} from '@angular/platform-browser';
-import {HttpClientModule} from '@angular/common/http';
-import {RouterModule} from '@angular/router';
-import {GlobalErrorHandleService} from "./icon-core.service";
+import { HttpClientModule } from '@angular/common/http';
+import { ErrorHandler, NgModule } from '@angular/core';
+import { MatIconRegistry } from '@angular/material/icon';
+import { DomSanitizer } from '@angular/platform-browser';
+import { RouterModule } from '@angular/router';
+import { GlobalErrorHandleService } from "./icon-core.service";
 
 @NgModule({
   imports: [HttpClientModule, RouterModule],
@@ -17,7 +17,7 @@ export class IconCoreModule {
     this._matIconRegistry.addSvgIconSetInNamespace(
       'fa_brands',
       this._domSanitizer.bypassSecurityTrustResourceUrl(
-        'assets/icons/svgs/brands.svg'
+        './assets/brands.svg'
       )
     );
     this._matIconRegistry.addSvgIconSetInNamespace(
